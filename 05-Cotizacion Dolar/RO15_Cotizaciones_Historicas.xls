@@ -1,0 +1,42 @@
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Operaciones Finalizadas</title>
+</head>
+<body>
+    <div>
+        <p>Historico de cotizaciones de RO15</p>
+    </div>
+    <div>
+        
+<table class="table table-striped" id="tbcotizaciones">
+    <thead>
+        <tr>
+            <th class="tac">Fecha Cotizaci&oacute;n</th>
+            <th class="tac">Apertura</th>
+            <th class="tac">M&aacute;ximo</th>
+            <th class="tac">M&iacute;nimo</th>
+            <th class="tac">Cierre</th>
+            <th class="tac">Cierre ajustado</th>
+            <th class="tac">Volumen Monto</th>
+            <th class="tac">Volumen Nominal</th>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+<script>
+    $(function () {
+        $('#tbcotizaciones').DataTable(
+            {
+                "ordering": false,
+                "searching": false
+            }
+        );
+    });
+</script>
+    </div>
+</body>
+</html>
